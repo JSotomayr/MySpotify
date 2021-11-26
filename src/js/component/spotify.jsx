@@ -1,22 +1,21 @@
 import React from "react";
+import PropTypes from "prop-types";
 
-const Spotify = () => {
+const Spotify = props => {
+	return (
+		<div
+			className="song"
+			onClick={() => {
+				props.play();
+			}}>
+			{props.name}
+		</div>
+	);
+};
 
-    fetch("https://assets.breatheco.de/apis/sound/").then(music => {
-        console.log(music)
-
-        if(music.ok) {
-            return music.json()
-        }
-    }).then(musicAsJSON => {
-        console.log(musicAsJSON);
-    })
-    return (
-        <audio controls>
-            <source src="" type="audio/mp3"/>
-        </audio>
-    );
-}
+Spotify.propTypes = {
+	name: PropTypes.string,
+	play: PropTypes.func
+};
 
 export default Spotify;
-

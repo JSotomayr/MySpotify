@@ -1,13 +1,90 @@
 @import "~bootstrap/scss/bootstrap.scss";
 
-/* 
+@import "~bootstrap/scss/bootstrap.scss";
+@import url('https://fonts.googleapis.com/css2?family=Road+Rage&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Road+Rage&family=Yanone+Kaffeesatz&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+#app{
+    height: 100%;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("https://images.unsplash.com/photo-1627856013091-fed6e4e30025?ixlib=rb-1.2.1&q=60&fm=jpg&crop=faces%2Cedges&cs=tinysrgb&w=1200&fit=crop&auto=format&h=630&mark-w=64&mark-align=top%2Cleft&mark-pad=50&blend-mode=normal&blend-alpha=10&blend-w=1&mark=https%3A%2F%2Fimages.unsplash.com%2Fopengraph%2Flogo.png&blend=000000");
+    background-size: cover;
+}
 
-*/
+h1 {
+    margin-bottom: 2rem;
+}
+.container{
+    background-color: rgba(156, 156, 156, 0.6);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.playlist {
+    background: #0000001c;
+    list-style:none;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    width: 16rem;
+    font-family: 'Road Rage', cursive;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    color:beige;
+
+}
+.containerButton {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+button{
+    height: 2rem;
+    margin-top: 1.5rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+li {
+    background-color: rgb(156, 156, 156);
+    list-style:none;
+    font-size: 1.2rem;
+    padding: 0 1rem; 
+    border-radius: 2rem;
+    margin-bottom: 0.2rem;
+}
+
+li:hover {
+    background: #83c643;
+    border-radius: 2rem;
+    padding: 0 1rem;
+    font-size: 1.25rem;
+}
+
+.console {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.playingSong {
+    color: rgb(214, 214, 214);
+    background: transparent;
+    background-color: rgba(255, 255, 255, .05);
+    backdrop-filter: blur(5px);
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    text-align: center;
+}
+
+ul {
+    padding-left: 0rem;
+}
